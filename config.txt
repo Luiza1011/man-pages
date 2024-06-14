@@ -13,14 +13,14 @@
 // If you don't know how to get a bot token, please see the guide here:
 // https://github.com/jagrosh/MusicBot/wiki/Getting-a-Bot-Token
 
-token = MTI1MDE1OTczNTAxODA5NDcyMw.GsP5Ug.pSRAWWK-DWQsvKGD4TBAq_7pWakmB6HF3i_6Wk
+token = <token>
 
 
 // This sets the owner of the bot
 // This needs to be the owner's ID (a 17-18 digit number)i
 // https://github.com/jagrosh/MusicBot/wiki/Finding-Your-User-ID
 
-owner = 543264608467550218
+owner = <user-id>
 
 
 // This sets the prefix for the bot
@@ -28,8 +28,8 @@ owner = 543264608467550218
 // If you use !!, the play command will be !!play
 // If you do not set this, the prefix will be a mention of the bot (@Botname play)
 
-prefix = "@mention"
-
+//prefix = "@mention"
+prefix = ";"
 
 // If you set this, it modifies the default game of the bot
 // Set this to NONE to have no game
@@ -155,18 +155,18 @@ lyrics.default = "A-Z Lyrics"
 
 aliases {
   // General commands
-  settings = [ status ]
+  settings = [ sfetch ]
 
   // Music commands:wq
   lyrics = []
-  nowplaying = [ np, current ]
-  play = []
-  playlists = [ pls ]
-  queue = [ list ]
-  remove = [ delete ]
+  nowplaying = [ fetch, np, current ]
+  play = [ exec, ]
+  playlists = [ ls-p ]
+  queue = [ list, ls ]
+  remove = [ delete, rm ]
   scsearch = []
-  search = [ ytsearch ]
-  shuffle = []
+  search = [ ytsearch, find ]
+  shuffle = [ sh ]
   skip = [ voteskip ]
 
   // Admin commands
@@ -177,15 +177,15 @@ aliases {
   setvc = []
 
   // DJ Commands
-  forceremove = [ forcedelete, modremove, moddelete, modelete ]
-  forceskip = [ modskip ]
-  movetrack = [ move ]
-  pause = []
-  playnext = []
-  queuetype = []
-  repeat = []
+  forceremove = [ f-rm, forcedelete, modremove, moddelete, modelete ]
+  forceskip = [ modskip, fskip ]
+  movetrack = [ move, mv ]
+  pause = [ p ]
+  playnext = [ nxt ]
+  queuetype = [ ls-t]
+  repeat = [ loop ]
   skipto = [ jumpto ]
-  stop = [ leave ]
+  stop = [ leave, exit ]
   volume = [ vol ]
 }
 
